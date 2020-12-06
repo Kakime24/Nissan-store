@@ -1,0 +1,373 @@
+body{
+	margin: 0;
+}
+.header{
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    background-color: #000000;
+    display: block;
+    margin-top: -20px;   
+    margin-left: -8px;
+    opacity: 70%;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+}
+#logo{
+    width: 7%;
+    height: 7%;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;  
+}
+#ul{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: -80px;
+    font-size: 20px;
+    font-family: "Nissan Regular", Verdana, Arial, sans-serif;
+    list-style-type: none;
+    width: 45%;
+    height: 25%;
+    align-items: center;
+}
+#bg-picture{
+	width: 1903px;
+	height: 970px;
+    margin-top: -20px;
+	z-index: 0;
+}
+#bg2-picture{
+	width: 1903px;
+	height: 950px;
+	z-index: 0;
+}
+#bg3-picture{
+	width: 700px;
+	height: 600px;
+	border-radius: 20px;
+	margin-left: 1000px;
+	box-shadow: 0 0 10px 1px;
+}
+h1{
+font-size: 100px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: center;
+color: white;
+opacity: 80%;
+}
+h2{
+font-size: 28.5px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: white;
+opacity: 80%;
+width: 55%;
+}
+h3{
+font-size: 100px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: #191919;
+opacity: 80%;
+}
+h4{
+font-size: 25px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: white;
+opacity: 80%;
+width: 45%;
+}
+#h1{
+margin-top: -970px;
+margin-left: -600px;
+}
+#h2{
+	margin-left: 20px;
+	margin-top: -45px;
+}
+#h3{
+	margin-left: 400px;
+	margin-top: -1000px;
+	color: black;
+}
+#h4{
+	margin-left: 150px;
+	margin-top: -630px;
+	color: black;
+	font-size: 28.5px;
+}
+#toggle{
+    display:flex;
+    z-index: 9;
+}
+.nav{
+    float: left;
+    position: fixed;
+    z-index: 9;
+}
+label{
+    margin: 8px 0 0 20px;
+    font-size: 30px;
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 560px){
+label{
+    display: block;
+    cursor: pointer;
+    color: white;
+    z-index: 9;
+}
+.header{
+    width: 550px;
+    z-index: 8;
+}
+#ul{
+    display: none;
+    z-index: 8;
+}
+#logo{
+    display: flex;
+    width: 20%;
+    margin-left: 450px;
+    margin-top: 14px;
+}
+#toggle:checked + .header #ul{
+    position: inherit;
+    display: block;
+    width: 540px;
+    height: 120px;
+    padding-top: 0px;
+    font-size: 20px;
+    margin-left: -10px;
+    background-color: #000000;
+    color: black;
+
+}
+.shapka{
+    display: block;
+    padding-top: 60px;
+}
+#bg-picture{
+    width: 100%;
+    margin-top: -20px;
+    z-index: 0;
+}
+h1{
+font-size: 50px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+margin-left: 500px;
+margin-top: 80px;
+color: white;
+opacity: 80%;
+width: 50%;
+}
+h2{
+font-size: 20px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: white;
+opacity: 80%;
+width: 90%;
+}
+#h2{
+    margin-top: 20px;
+}
+h3{
+color: #191919;
+font-size: 50px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+margin-left: 500px;
+margin-top: 80px;
+opacity: 80%;
+width: 50%;
+margin-left: -250px;
+}
+h4{
+font-size: 25px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: black;
+opacity: 80%;
+width: 100%;
+margin-left: -60px;
+margin-top: 800px;
+}
+#bg3-picture{
+    width: 90%;
+    margin-left: 25px;
+}
+}
+
+@media (min-width: 561px) and (max-width: 992px){
+label{
+    display: block;
+    cursor: pointer;
+    color: white;
+    z-index: 9;
+}
+.header{
+    width: 992px;
+    z-index: 8;
+}
+#ul{
+    display: none;
+    z-index: 8;
+}
+#logo{
+    display: flex;
+    width: 12%;
+    margin-left: 850px;
+    margin-top: 10px;
+}
+#toggle:checked + .header #ul{
+    position: inherit;
+    display: block;
+    width: 992px;
+    height: 120px;
+    padding-top: 0px;
+    font-size: 20px;
+    margin-left: -10px;
+    background-color: #000000;
+    color: black;
+
+}
+.shapka{
+    display: block;
+    padding-top: 60px;
+}
+h1{
+font-size: 50px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+margin-left: 600px;
+margin-top: 80px;
+color: white;
+opacity: 80%;
+width: 50%;
+}
+h2{
+font-size: 20px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: white;
+opacity: 80%;
+width: 90%;
+}
+#h2{
+    margin-top: 20px;
+}
+#bg-picture{
+    width: 100%;
+    margin-top: -20px;
+    z-index: 0;
+}
+h3{
+color: #191919;
+font-size: 50px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+margin-left: -200px;
+margin-top: 80px;
+opacity: 80%;}
+h4{
+font-size: 25px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: black;
+opacity: 80%;
+width: 100%;
+margin-left: -60px;
+margin-top: 800px;
+}
+#h4{
+    margin-top: -550px;
+}
+#bg3-picture{
+    width: 95%;
+    margin-left: 25px;
+}
+}
+
+@media (min-width: 993px) and (max-width: 1280px){
+#logo{
+    display: flex;
+    width: 10%;
+    margin-left: 0;
+    margin-top: 10px;
+}
+#ul{
+    position: fixed;
+    top: 0;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.shapka{
+    display: block;
+    padding-top: 0px;
+}
+#himg{
+    width: 100%;
+}
+h1{
+font-size: 70px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+margin-left: 600px;
+margin-top: 80px;
+color: white;
+opacity: 80%;
+width: 50%;
+}
+h2{
+font-size: 30px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: white;
+opacity: 80%;
+width: 90%;
+}
+#h2{
+    margin-top: 20px;
+}
+#bg-picture{
+    width: 100%;
+    margin-top: -20px;
+    z-index: 0;
+}
+h3{
+color: #191919;
+font-size: 70px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+margin-left: -200px;
+margin-top: 80px;
+opacity: 80%;}
+h4{
+font-size: 25px;
+font-family: "Nissan Light","Nissan Regular",Verdana,Arial,sans-serif;
+text-align: justify;
+color: black;
+opacity: 80%;
+width: 100%;
+margin-left: -60px;
+margin-top: 750px;
+}
+#h4{
+    margin-top: -550px;
+}
+#bg3-picture{
+    width: 95%;
+    margin-left: 25px;
+}
+}

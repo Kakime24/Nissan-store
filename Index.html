@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru-KZ" dir="ltr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">  
+    <title>Nissan center store</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body bgcolor="black" onload="load()">
+    <div class="nav">
+        <label for="toggle">&#9776;</label>
+    </div>
+    <input type="checkbox" name="" id="toggle">
+      <div class="header">
+        <div class="shapka-1">       
+            <img id ="logo" onclick="window.location.reload()" src = "images/logo.png">
+                <div class="shapka">
+                    <ul id='ul'>
+                        <li id="X-Trail" onclick="change(this)"><a href="avtomobile/Index.html">Автомобили</a></li>
+                        <li id="Murano" onclick="change(this)"><a href="mir nissan/Index.html">Мир Nissan</a></li>
+                        <li id="Juke" onclick="change(this)"><a href="o nas/Index.html">О нас</a></li>
+                        <li id="Teana" onclick="change(this)"><a href="">Контакты</a></li> 
+                    </ul>
+                </div>
+        </div>
+                 <div class="pic">
+                    <div class="user_profile">
+                        <img id="profile_img" src="https://appamatix.com/wp-content/uploads/2016/05/Anonymous-FeatPic.jpg" alt="">
+                        <p id="user_name">Danny</p>
+                    </div>
+                 <div class="btnn">
+                    <button onclick="vhod()" id="btn_white" class="btn btn-outline-light btn-lg">Авторизоваться</button>
+                  </div>
+                  <div class="ftnn">
+                    <button onclick="zakaz()" id="ftn_white" class="ftn ftn-outline-light ftn-lg">Оставить заявку</button>
+                  </div> 
+              </div>
+    </div>
+    <div class="center">   
+            <div class="carusel">
+                <div class="block1">
+                    <img id="himg" src="images/Обложка.jpg">
+                    <div class="zogolovok1">
+                        <h1 id="blink1">NISSAN STORE 2020</h1>
+                        <h2 id="blink1">Добро пожаловать в наш магазин! Что Вас интересует?</h2>
+                    </div>
+                </div>
+                <div class="block2">
+
+                    <img id="o-nas" src="images/О нас.jpg">
+                    <div class="zogovolok2">
+                        <h1 id="h3">О НАС</h1>
+                        <div class="zogolovok3">
+                        <h1 id="h4">Nissan Motor Co., Ltd. (яп. 日産自動車株式会社 ниссан дзидо:ся кабусикигайся) — японский автопроизводитель, один из крупнейших в мире. Компания основана в 1933 году. По состоянию на 2010 год занимает 8-е место в мировом рейтинге автопроизводителей (3-е среди японских производителей, после Toyota и Honda) по версии международного института исследования рынка IHS Automotive. Штаб-квартира находится в городе Иокогама.</h1>
+                        </div>
+                        <div class=btn-nas>
+                            <a href="C:\Users\kakim\OneDrive\Рабочий стол\Erkosh SDU\Сегодня — копия\Web — копия\Project1\o nas/Index.html"><button id="btn_nas" class="btn btn-outline-light btn-lg">Подробне</button></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="vhod">
+                    <div class="vhod-content">
+                        <img onclick="close_vhod()" class="zakryt" src="images/x.png" alt="" width="7%">
+                        <img src="images/logo1.png" alt="" width="15%">
+                        <p id="p_vhod">Войти в личный кабинет</p>
+                        <input id="username" type="text" name="username" placeholder="Логин">
+                        <input type="password" id="pass" name="pass" placeholder="Пароль">
+                        <input type="checkbox" name="remember" style="margin-left:0px;" >
+                        <p id="lab1">Запомнить меня</p>   
+                        <button onclick="login(username.value)" class="btn btn-outline-dark">Вход</button>
+                        <p id="p1_vhod">Вы не зарегистрированы?</p> 
+                        <button onclick="regist()" id="rtn_white" class="rtn rtn-outline-light rtn-lg" >Зарегистрировать аккаунт</button> 
+                    </div>
+                </div>
+                <div class="zakaz">
+                    <div class="zakaz-content">
+                        <img  onclick="close_zakaz()" class="zakryt" src="images/x.png" alt="" width="7%">
+                        <img src="images/logo1.png" alt="" width="15%">
+                        <input id="Name1" type="text" name="name" placeholder="Имя">
+                        <input id="Surname1" type="text" name="surname" placeholder="Фамилия">
+                        <input id="Lastname1" type="text" name="lastname" placeholder="Отечество">
+                        <input id="Address1" type="text" name="adress" placeholder="Адрес">
+                        <input id="Index1" type="text" name="index" placeholder="Почтовый индекс">
+                        <input id="Phone1" type="text" name="phone" placeholder="Номер телефона">
+                        <input id="E-mail1" type="text" name="email" placeholder="Оставьте почту что бы с вами связаться...">
+                        <textarea id="Zayav" type="text" name="zayav" style="width: 70%;" placeholder=" Оставьте свое предложение..."></textarea>
+                        <button onclick="zakaz1()" class="dtn ftn-outline-dark">Оставить заказ</button>
+                    </div>
+                </div>
+                <div class="regist">
+                    <div class="regist-content">
+                        <img onclick="close_regist()" class="zakryt" src="images/x.png" alt="" width="7%">
+                        <img src="images/logo1.png" alt="" width="15%">
+                        <input id="name" type="text" name="name" placeholder="Имя">
+                        <input id="surname" type="text" name="surname" placeholder="Фамилия">
+                        <input id="e-mail" type="text" name="email" placeholder="E-mail">
+                        <input id="pass1" type="password" name="pass" placeholder="Пароль">
+                        <input id="pass2" type="password" name="pass" placeholder="Повторить пороль">
+                        <input id="address" type="text" name="adress" placeholder="Адрес">
+                        <input id="index" type="text" name="index" placeholder="Почтовый индекс">
+                        <input id="phone" type="text" name="phone" placeholder="Номер телефона">
+                        <button onclick="registry()" class="rtn rtn-outline-dark">Регистрация</button>
+                    </div>
+                </div>
+                <div class="center2">
+                    <div class="zogolovok4">
+                        <h1 id="h5">Где мы находимся?</h1>
+                    </div>
+                    <div id="map1">
+                        <div id="map" style="width: 65.75%; height: 500px; margin-left: 1000px; margin-top: -250px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="center3">
+                    
+                    <div>
+                        <h1></h1>
+                    </div>
+                </div>   
+    </div>
+                
+        <script type="text/javascript" src="js/sript.js"></script>
+</body>
+</html>
